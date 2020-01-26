@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.learn_ar_flutter">
+    package="com.example.ChaMaxAdr">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera.ar" />
@@ -11,7 +11,7 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="LearnARF"
+        android:label="ChaMaxAdr"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

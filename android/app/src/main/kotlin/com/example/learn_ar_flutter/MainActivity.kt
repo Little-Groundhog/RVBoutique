@@ -1,4 +1,4 @@
-package com.example.learn_ar_flutter
+package com.example.ChaMaxAdr
 
 import android.os.Bundle
 

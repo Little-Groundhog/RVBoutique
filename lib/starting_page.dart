@@ -37,7 +37,7 @@ class _StartingPageState extends State<StartingPage> {
         backgroundColor: Colors.blueAccent,
         centerTitle: true,
         title: Text(
-          'Chachou Maxime Adrien',
+          'Rencontrer votre nouvel ami',
           style: TextStyle(
             fontSize: 25,
           ),

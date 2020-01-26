@@ -19,6 +19,8 @@ class ModelBloc {
         _prefab = strings.statuePrefab;
       } else if (event is CubeModelSelectEvent) {
         _prefab = strings.cubePrefab;
+      } else if (event is BrainModelSelectEvent){
+        _prefab = strings.brainPrefab;
       }
 
       _inModel.add(_prefab);

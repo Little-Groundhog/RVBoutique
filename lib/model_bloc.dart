@@ -4,7 +4,7 @@ import 'package:ChaMaxAdr/model_event.dart';
 import 'package:ChaMaxAdr/strings.dart' as strings;
 
 class ModelBloc {
-  String _prefab = strings.statuePrefab;
+  String _prefab = strings.cubePrefab;
 
   final _modelStateController = StreamController<String>();
   StreamSink<String> get _inModel => _modelStateController.sink;
@@ -15,9 +15,7 @@ class ModelBloc {
 
   ModelBloc() {
     void _mapEventToState(ModelEvent event) {
-      if (event is StatueModelSelectEvent) {
-        _prefab = strings.statuePrefab;
-      } else if (event is CubeModelSelectEvent) {
+      if (event is CubeModelSelectEvent) {
         _prefab = strings.cubePrefab;
       } else if (event is BrainModelSelectEvent){
         _prefab = strings.brainPrefab;

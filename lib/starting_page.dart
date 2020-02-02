@@ -55,7 +55,7 @@ class _StartingPageState extends State<StartingPage> {
       body: Center(
         child: StreamBuilder(
           stream: _bloc.selectedModel,
-          initialData: strings.statuePrefab,
+          initialData: strings.cubePrefab,
           builder: (context, snapshot) {
             return Padding(
               padding: const EdgeInsets.all(8.0),
@@ -64,16 +64,11 @@ class _StartingPageState extends State<StartingPage> {
                 children: <Widget>[
                   Expanded(
                     child: GridView.count(
-                      crossAxisCount: 3,
+                      crossAxisCount: 2,
                       padding: EdgeInsets.all(5.0),
                       crossAxisSpacing: 8.0,
                       mainAxisSpacing: 8.0,
                       children: <Widget>[
-                        customContainer(
-                          strings.statuePrefab,
-                          size,
-                          snapshot.data == strings.statuePrefab,
-                        ),
                         customContainer(
                           strings.cubePrefab,
                           size,
@@ -103,6 +98,12 @@ class _StartingPageState extends State<StartingPage> {
                           selectedModel: snapshot.data,
                         ),
                       ),
+                    ),
+                  ),
+                  TextField(
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: 'Code de la boutique'
                     ),
                   ),
                 ],

@@ -1,6 +1,7 @@
 String start = "GO !";
 String statuePrefab = "statueModel";
 String cubePrefab = "cubeModel";
+String brainPrefab = "brainModel";
 String catPrefab = "catModel";
 String legoHousePrefab = "legoHouseModel";
 String aboutApp = "Alors elle est pas génial notre application ? \n"

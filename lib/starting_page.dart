@@ -37,7 +37,7 @@ class _StartingPageState extends State<StartingPage> {
         backgroundColor: Colors.blueAccent,
         centerTitle: true,
         title: Text(
-          'Rencontrer votre nouvel ami',
+          'Rencontrer un ami',
           style: TextStyle(
             fontSize: 25,
           ),
@@ -55,7 +55,7 @@ class _StartingPageState extends State<StartingPage> {
       body: Center(
         child: StreamBuilder(
           stream: _bloc.selectedModel,
-          initialData: strings.statuePrefab,
+          initialData: strings.cubePrefab,
           builder: (context, snapshot) {
             return Padding(
               padding: const EdgeInsets.all(8.0),
@@ -70,14 +70,14 @@ class _StartingPageState extends State<StartingPage> {
                       mainAxisSpacing: 8.0,
                       children: <Widget>[
                         customContainer(
-                          strings.statuePrefab,
-                          size,
-                          snapshot.data == strings.statuePrefab,
-                        ),
-                        customContainer(
                           strings.cubePrefab,
                           size,
                           snapshot.data == strings.cubePrefab,
+                        ),
+                        customContainer(
+                          strings.brainPrefab,
+                          size,
+                          snapshot.data == strings.brainPrefab,
                         ),
                       ],
                     ),
@@ -98,6 +98,12 @@ class _StartingPageState extends State<StartingPage> {
                           selectedModel: snapshot.data,
                         ),
                       ),
+                    ),
+                  ),
+                  TextField(
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: 'Code de la boutique'
                     ),
                   ),
                 ],
@@ -135,8 +141,8 @@ class _StartingPageState extends State<StartingPage> {
       ),
       onTap: () => _bloc.modelSink.add(
         image == strings.statuePrefab
-            ? StatueModelSelectEvent()
-            : CubeModelSelectEvent(),
+            ? CubeModelSelectEvent()
+            : BrainModelSelectEvent()
       ),
     );
   }

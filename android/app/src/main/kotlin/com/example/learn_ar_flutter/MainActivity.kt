@@ -1,4 +1,4 @@
-package com.example.ChaMaxAdr
+package com.vba.ChaMaxAdr
 
 import android.os.Bundle
 

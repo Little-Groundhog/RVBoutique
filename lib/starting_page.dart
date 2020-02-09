@@ -82,6 +82,12 @@ class _StartingPageState extends State<StartingPage> {
                       ],
                     ),
                   ),
+                  TextField(
+                    decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: 'Code de la boutique'
+                    ),
+                  ),
                   FlatButton(
                     highlightColor: Colors.transparent,
                     splashColor: Colors.transparent,
@@ -98,12 +104,6 @@ class _StartingPageState extends State<StartingPage> {
                           selectedModel: snapshot.data,
                         ),
                       ),
-                    ),
-                  ),
-                  TextField(
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                      hintText: 'Code de la boutique'
                     ),
                   ),
                 ],

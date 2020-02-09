@@ -70,9 +70,9 @@ class _StartingPageState extends State<StartingPage> {
                       mainAxisSpacing: 8.0,
                       children: <Widget>[
                         customContainer(
-                          strings.cubePrefab,
+                          strings.dronePrefab,
                           size,
-                          snapshot.data == strings.cubePrefab,
+                          snapshot.data == strings.dronePrefab,
                         ),
                         customContainer(
                           strings.brainPrefab,
@@ -82,7 +82,7 @@ class _StartingPageState extends State<StartingPage> {
                       ],
                     ),
                   ),
-                  TextField(
+                  TextField(//TODO récup le texte et générer le modele 3D
                     decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: 'Code de la boutique'
@@ -140,8 +140,8 @@ class _StartingPageState extends State<StartingPage> {
         ),
       ),
       onTap: () => _bloc.modelSink.add(
-        image == strings.statuePrefab
-            ? CubeModelSelectEvent()
+        image == strings.dronePrefab
+            ? DroneModelSelectEvent()
             : BrainModelSelectEvent()
       ),
     );

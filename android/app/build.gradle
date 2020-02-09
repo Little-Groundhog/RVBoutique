@@ -96,9 +96,9 @@ sceneform.asset('sampledata/Cube/scene.gltf',
         'sampledata/Cube/scene.sfa',
         'src/main/assets/cubeModel')
 
-sceneform.asset('sampledata/BrainStem/scene.gltf',
+sceneform.asset('sampledata/BrainStem/BrainStem.gltf',
         'default',
-        'sampledata/BrainStem/scene.sfa',
+        'sampledata/BrainStem/BrainStem.sfa',
         'src/main/assets/brainModel')
 
 
@@ -106,3 +106,8 @@ sceneform.asset('sampledata/Anubis Statue/scene.gltf',
         'default',
         'sampledata/Anubis Statue/scene.sfa',
         'src/main/assets/statueModel')
+
+sceneform.asset('sampledata/buster_drone/scene.gltf',
+        'default',
+        'sampledata/buster_drone/scene.sfa',
+        'src/main/assets/droneModel')

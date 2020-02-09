@@ -1,0 +1,279 @@
+{
+  materials: [
+    {
+      name: 'Boden',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'Boden_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: 'Boden_normal',
+        },
+        {
+          metallicFactor: 1,
+        },
+        {
+          roughnessFactor: 1,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: 'Boden_metallicRoughness',
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+    {
+      name: 'body',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'body_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: 'body_normal',
+        },
+        {
+          metallicFactor: 1,
+        },
+        {
+          roughnessFactor: 1,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: 'body_metallicRoughness',
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          emissive: 'body_emissive',
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+    {
+      name: 'material',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'material_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: 'material_normal',
+        },
+        {
+          metallicFactor: 1,
+        },
+        {
+          roughnessFactor: 1,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: 'material_metallicRoughness',
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/buster_drone/scene.gltf',
+    name: 'scene',
+    recenter: 'root',
+    scale: 0.0086090000000000003,
+  },
+  samplers: [
+    {
+      file: 'sampledata/buster_drone\\textures\\Boden_baseColor.png',
+      name: 'Boden_baseColor',
+      pipeline_name: 'textures/Boden_baseColor.png',
+    },
+    {
+      file: 'sampledata/buster_drone\\textures\\Boden_normal.png',
+      name: 'Boden_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'textures/Boden_normal.png',
+    },
+    {
+      file: 'sampledata/buster_drone\\textures\\Boden_metallicRoughness.png',
+      name: 'Boden_metallicRoughness',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'textures/Boden_metallicRoughness.png',
+    },
+    {
+      file: 'sampledata/buster_drone\\textures\\body_baseColor.png',
+      name: 'body_baseColor',
+      pipeline_name: 'textures/body_baseColor.png',
+    },
+    {
+      file: 'sampledata/buster_drone\\textures\\material_baseColor.png',
+      name: 'material_baseColor',
+      pipeline_name: 'textures/material_baseColor.png',
+    },
+    {
+      file: 'sampledata/buster_drone\\textures\\body_metallicRoughness.png',
+      name: 'body_metallicRoughness',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'textures/body_metallicRoughness.png',
+    },
+    {
+      file: 'sampledata/buster_drone\\textures\\body_emissive.png',
+      name: 'body_emissive',
+      pipeline_name: 'textures/body_emissive.png',
+    },
+    {
+      file: 'sampledata/buster_drone\\textures\\body_normal.png',
+      name: 'body_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'textures/body_normal.png',
+    },
+    {
+      file: 'sampledata/buster_drone\\textures\\material_metallicRoughness.png',
+      name: 'material_metallicRoughness',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'textures/material_metallicRoughness.png',
+    },
+    {
+      file: 'sampledata/buster_drone\\textures\\material_normal.png',
+      name: 'material_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'textures/material_normal.png',
+    },
+  ],
+  version: '0.54:2',
+}

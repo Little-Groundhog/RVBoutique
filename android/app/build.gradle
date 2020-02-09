@@ -107,7 +107,8 @@ sceneform.asset('sampledata/Anubis Statue/scene.gltf',
         'sampledata/Anubis Statue/scene.sfa',
         'src/main/assets/statueModel')
 
-sceneform.asset('sampledata/buster_drone/scene.gltf',
+sceneform.asset('sampledata/buster_drone/BusterDrone.fbx',//TODO mettre à jour les textures ave le fbx
         'default',
-        'sampledata/buster_drone/scene.sfa',
-        'src/main/assets/droneModel')
+        'sampledata/buster_drone/BusterDrone.sfa',
+        'src/main/assets/droneModel',
+        ['sampledata/buster_drone/BusterDrone.fbx'])

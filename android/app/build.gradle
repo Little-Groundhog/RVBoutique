@@ -108,7 +108,7 @@ sceneform.asset('sampledata/Anubis Statue/scene.gltf',
         'sampledata/Anubis Statue/scene.sfa',
         'src/main/assets/statueModel')
 
-sceneform.asset('sampledata/buster_drone/BusterDrone.gltf',
+sceneform.asset('sampledata/buster_drone/drone.gltf',
         'default',
-        'sampledata/buster_drone/BusterDrone.sfa',
+        'sampledata/buster_drone/drone.sfa',
         'src/main/assets/droneModel')

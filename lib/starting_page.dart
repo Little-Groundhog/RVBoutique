@@ -17,6 +17,7 @@ class StartingPage extends StatefulWidget {
 
 class _StartingPageState extends State<StartingPage> {
   final _bloc = ModelBloc();
+  TextEditingController texteEntre = new TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -82,10 +83,14 @@ class _StartingPageState extends State<StartingPage> {
 //                      ],
 //                    ),
 //                  ),
-                  TextField(//TODO récup le texte et générer le modele 3D
+                  TextField(//TODO pour chopper le contenu du texte texteEntre.text
+                    controller: texteEntre,
+                    obscureText: true,
+                    textAlign: TextAlign.center,
                     decoration: InputDecoration(
-                        border: InputBorder.none,
-                        hintText: 'Code de la boutique'
+                      border: InputBorder.none,
+                      hintText: 'Code obtenu dans la boutique',
+                      hintStyle: TextStyle(color: Colors.grey),
                     ),
                   ),
                   FlatButton(

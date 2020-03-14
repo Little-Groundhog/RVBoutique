@@ -62,27 +62,27 @@ class _StartingPageState extends State<StartingPage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  Expanded(
-                    child: GridView.count(
-                      crossAxisCount: 2,
-                      padding: EdgeInsets.all(5.0),
-                      crossAxisSpacing: 8.0,
-                      mainAxisSpacing: 8.0,
-                      children: <Widget>[
-                        customContainer(
-                          strings.cubePrefab,
-                          size,
-                          snapshot.data == strings.cubePrefab,
-                        ),
-                        customContainer(
-                          strings.brainPrefab,
-                          size,
-                          snapshot.data == strings.brainPrefab,
-                        ),
-                      ],
-                    ),
-                  ),
-                  TextField(
+//                  Expanded(
+//                    child: GridView.count(
+//                      crossAxisCount: 2,
+//                      padding: EdgeInsets.all(5.0),
+//                      crossAxisSpacing: 8.0,
+//                      mainAxisSpacing: 8.0,
+//                      children: <Widget>[
+//                        customContainer(
+//                          strings.dronePrefab,
+//                          size,
+//                          snapshot.data == strings.dronePrefab,
+//                        ),
+//                        customContainer(
+//                          strings.brainPrefab,
+//                          size,
+//                          snapshot.data == strings.brainPrefab,
+//                        ),
+//                      ],
+//                    ),
+//                  ),
+                  TextField(//TODO récup le texte et générer le modele 3D
                     decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: 'Code de la boutique'
@@ -115,37 +115,37 @@ class _StartingPageState extends State<StartingPage> {
     );
   }
 
-  Widget customContainer(String image, Size size, bool border) {
-    return GestureDetector(
-      child: AnimatedContainer(
-        duration: Duration(milliseconds: 200),
-        width: size.width * 7 / 10,
-        height: size.width * 7 / 10,
-        decoration: BoxDecoration(
-          color: Colors.transparent,
-          borderRadius: BorderRadius.circular(300),
-          border: border
-              ? Border.all(
-                  color: Colors.blueGrey,
-                  width: 6,
-                )
-              : null,
-        ),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(500),
-          child: Image.asset(
-            "assets/" + image + ".png",
-            fit: BoxFit.contain,
-          ),
-        ),
-      ),
-      onTap: () => _bloc.modelSink.add(
-        image == strings.statuePrefab
-            ? CubeModelSelectEvent()
-            : BrainModelSelectEvent()
-      ),
-    );
-  }
+//  Widget customContainer(String image, Size size, bool border) {
+//    return GestureDetector(
+//      child: AnimatedContainer(
+//        duration: Duration(milliseconds: 200),
+//        width: size.width * 7 / 10,
+//        height: size.width * 7 / 10,
+//        decoration: BoxDecoration(
+//          color: Colors.transparent,
+//          borderRadius: BorderRadius.circular(300),
+//          border: border
+//              ? Border.all(
+//                  color: Colors.blueGrey,
+//                  width: 6,
+//                )
+//              : null,
+//        ),
+//        child: ClipRRect(
+//          borderRadius: BorderRadius.circular(500),
+//          child: Image.asset(
+//            "assets/" + image + ".png",
+//            fit: BoxFit.contain,
+//          ),
+//        ),
+//      ),
+//      onTap: () => _bloc.modelSink.add(
+//        image == strings.dronePrefab
+//            ? DroneModelSelectEvent()
+//            : BrainModelSelectEvent()
+//      ),
+//    );
+//  }
 
   @override
   void dispose() {

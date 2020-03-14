@@ -10,4 +10,4 @@ String aboutApp = "Alors elle est pas génial notre application ? \n"
     "le petit bouton Git juste en dessous ;) \n"
     "En éspérant vous revoir sous de plus mauvaise augure !\n"
     "Charlotte Maxime Adrien";
-String repoLink = "https://github.com/MaximeBelcour/RVBoutique";
+String repoLink = "https://github.com/Little-Groundhog/RVBoutique";

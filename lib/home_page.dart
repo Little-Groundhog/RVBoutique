@@ -45,12 +45,12 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       if (activePlayer == 1) {
         gb.text = "X";
-        gb.bg = Colors.red;
+        gb.bg = Colors.amber;
         activePlayer = 2;
         player1.add(gb.id);
       } else {
         gb.text = "0";
-        gb.bg = Colors.black;
+        gb.bg = Colors.blueGrey;
         activePlayer = 1;
         player2.add(gb.id);
       }
@@ -60,8 +60,8 @@ class _HomePageState extends State<HomePage> {
         if (buttonsList.every((p) => p.text != "")) {
           showDialog(
               context: context,
-              builder: (_) => new CustomDialog("Game Tied",
-                  "Press the reset button to start again.", resetGame));
+              builder: (_) => new CustomDialog("Match nul",
+                  "Presse le bouton reset pour relancer", resetGame));
         } else {
           activePlayer == 2 ? autoPlay() : null;
         }
@@ -154,13 +154,13 @@ class _HomePageState extends State<HomePage> {
       if (winner == 1) {
         showDialog(
             context: context,
-            builder: (_) => new CustomDialog("Player 1 Won",
-                "Press the reset button to start again.", resetGame));
+            builder: (_) => new CustomDialog("Le joueur 1 gagne",
+                "Presse le bouton reset pour rejouer", resetGame));
       } else {
         showDialog(
             context: context,
-            builder: (_) => new CustomDialog("Player 2 Won",
-                "Press the reset button to start again.", resetGame));
+            builder: (_) => new CustomDialog("L'ordi gagne",
+                "Presse le bouton reset pour rejouer", resetGame));
       }
     }
 
@@ -178,7 +178,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
-          title: new Text("Tic Tac Toe"),
+          title: new Text("Morpion"),
         ),
         body: new Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -217,7 +217,7 @@ class _HomePageState extends State<HomePage> {
                 "Reset",
                 style: new TextStyle(color: Colors.white, fontSize: 20.0),
               ),
-              color: Colors.red,
+              color: Colors.lightGreen,
               padding: const EdgeInsets.all(20.0),
               onPressed: resetGame,
             )

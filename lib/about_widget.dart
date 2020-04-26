@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'package:ChaMaxAdr/home_page.dart';
 import 'package:ChaMaxAdr/strings.dart' as strings;
 
 import 'package:url_launcher/url_launcher.dart';
@@ -23,9 +25,14 @@ class AboutWidget extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            Text(
-              strings.aboutApp + "\n",
-              textAlign: TextAlign.center,
+            InkWell(
+              child: Text(strings.aboutApp),
+              onTap: () => Navigator.of(context).push(
+                CupertinoPageRoute(
+                  builder: (builder) => HomePage(
+                  ),
+                ),
+              ),
             ),
             Padding(
               padding: EdgeInsets.only(top: 10),

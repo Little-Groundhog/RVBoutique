@@ -26,13 +26,22 @@ class AboutWidget extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             InkWell(
-              child: Text(strings.aboutApp),
+              child: Text(strings.aboutApp, textAlign: TextAlign.center),
+            ),
+            InkWell(
+              child: Text(strings.charlotte, textAlign: TextAlign.center),
               onTap: () => Navigator.of(context).push(
                 CupertinoPageRoute(
                   builder: (builder) => HomePage(
                   ),
                 ),
               ),
+            ),
+            InkWell(
+              child: Text(strings.maxime),
+            ),
+            InkWell(
+              child: Text(strings.adrien),
             ),
             Padding(
               padding: EdgeInsets.only(top: 10),

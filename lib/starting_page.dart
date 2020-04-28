@@ -85,13 +85,25 @@ class _StartingPageState extends State<StartingPage> {
 //                  ),
                   TextField(//TODO pour chopper le contenu du texte texteEntre.text
                     controller: texteEntre,
-                    obscureText: true,
+                    obscureText: false,
                     textAlign: TextAlign.center,
                     decoration: InputDecoration(
                       border: InputBorder.none,
                       hintText: 'Code obtenu dans la boutique',
                       hintStyle: TextStyle(color: Colors.grey),
                     ),
+                  ),
+                  FlatButton(
+                      highlightColor: Colors.transparent,
+                      splashColor: Colors.transparent,
+                      child: Text(
+                        strings.load.toUpperCase(),
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.amber,
+                        ),
+                      ),
+                      onPressed: () => checkCode()
                   ),
                   FlatButton(
                     highlightColor: Colors.transparent,
@@ -119,7 +131,56 @@ class _StartingPageState extends State<StartingPage> {
       ),
     );
   }
+Widget zoneTexte(BuildContext context){//TODO pour chopper le contenu du texte texteEntre.text
+  return GestureDetector(
+    child:TextField(
+      controller: texteEntre,
+      obscureText: true,
+      textAlign: TextAlign.center,
+      decoration: InputDecoration(
+        border: InputBorder.none,
+        hintText: 'Code obtenu dans la boutique',
+        hintStyle: TextStyle(color: Colors.grey),
+      ),
+    ),
+  );
+}
 
+void checkCode(){
+  if(texteEntre.text == strings.cubeCode){
+    CubeModelSelectEvent();
+    // ignore: unnecessary_statements
+    () => Navigator.of(context).push(
+      CupertinoPageRoute(
+        builder: (builder) => CameraScreen(
+          selectedModel: strings.cubePrefab,
+        ),
+      ),
+    );
+  }
+  if(texteEntre.text == strings.droneCode){
+    DroneModelSelectEvent();
+    // ignore: unnecessary_statements
+    () => Navigator.of(context).push(
+      CupertinoPageRoute(
+        builder: (builder) => CameraScreen(
+          selectedModel: strings.dronePrefab,
+        ),
+      ),
+    );
+  }
+  if(texteEntre.text == strings.brainCode){
+    DroneModelSelectEvent();
+    // ignore: unnecessary_statements
+    () => Navigator.of(context).push(
+      CupertinoPageRoute(
+        builder: (builder) => CameraScreen(
+          selectedModel: strings.brainPrefab,
+        ),
+      ),
+    );
+  }
+}
 //  Widget customContainer(String image, Size size, bool border) {
 //    return GestureDetector(
 //      child: AnimatedContainer(

@@ -25,4 +25,4 @@ String aboutApp = "Alors elle est pas génial notre application ? \n"
 String charlotte = "Charlotte ";
 String maxime = "Maxime ";
 String adrien = "Adrien\n";
-String repoLink = "https://github.com/Little-Groundhog/RVBoutique";
+String repoLink = "https://little-groundhog.github.io/RVBoutique/";

@@ -104,7 +104,7 @@ class _MyHomePageState extends State<MyHomePage>
       backgroundColor: Color(0xFFF3F3F3),
       appBar: AppBar(
         leading: Icon(
-          Icons.search,
+          Icons.home,
           color: Colors.black,
         ),
         backgroundColor: Color(0xFFF3F3F3),

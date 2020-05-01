@@ -49,28 +49,28 @@ class _MyHomePageState extends State<MyHomePage>
       title: 'Robot \nSteamPunk',
       subtitle: 'Le magnifique robot',
       price: '3000 jetons',
-      category: 'Robot',
+      category: 'Modèle 3D',
       imageUrl: AssetConstants.robot,
     );
     final product2 = Product(
       title: 'Cube\nLe Rubix de cube',
       subtitle: 'Le cube magique',
       price: '200 jetons',
-      category: 'Rubiks Cube',
+      category: 'Modèle 3D',
       imageUrl: AssetConstants.cube,
     );
     final product3 = Product(
       title: 'Chasseur automatique\nDrone',
       subtitle: 'OVNI',
       price: '5000 jetons',
-      category: 'Drone de combat',
+      category: 'Modèle 3D',
       imageUrl: AssetConstants.drone,
     );
     final product4 = Product(
       title: 'La maison\nen lego',
       subtitle: 'Construction',
       price: '500 jetons',
-      category: 'Maison',
+      category: 'Modèle 3D',
       imageUrl: AssetConstants.lego,
     );
 

@@ -170,12 +170,12 @@ class _MyHomePageState extends State<MyHomePage>
                 ),
                 Transform.translate(
                   offset: Offset(
-                    size.width / 2 - 25,
+                    size.aspectRatio,
                     _LogoOffsetAnimation.value,
                   ),
                   child: Container(
-                    height: 100,
-                    width: 50,
+                    height: 300,
+                    width: 150,
                     child: Image.network(AssetConstants.logoApp),
                   ),
                 ),

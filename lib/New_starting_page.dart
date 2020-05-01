@@ -2,10 +2,15 @@
 
 import 'dart:math';
 import 'dart:ui';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ChaMaxAdr/imagesNewStartPage.dart';
 import 'package:ChaMaxAdr/classNewStart.dart';
 import 'package:ChaMaxAdr/about_widget.dart';
+import 'package:ChaMaxAdr/strings.dart';
+
+
+import 'camera_screen.dart';
 
 
 class MyHomePage extends StatefulWidget {
@@ -191,7 +196,7 @@ class _MyHomePageState extends State<MyHomePage>
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Icon(
-                          Icons.arrow_back,
+                          Icons.star,
                           size: 16,
                         ),
                         InkWell(
@@ -217,7 +222,7 @@ class _MyHomePageState extends State<MyHomePage>
                           ),
                         ),
                         Icon(
-                          Icons.arrow_forward,
+                          Icons.mood,
                           size: 16,
                         ),
                       ],
@@ -316,18 +321,19 @@ class _PageItemViewState extends State<PageItemView> {
   }
 
   Widget _buildBackground(double height) {
-    return Container(
+    return GestureDetector(
+      behavior: HitTestBehavior.opaque,
+      onTap:() => Navigator.of(context).push(
+        CupertinoPageRoute(
+          builder: (builder) => CameraScreen(
+            selectedModel: "cubeModel",
+          ),
+        ),
+      ),
+      child: Container(
       height: height,
       width: 250,
       margin: const EdgeInsets.all(32),
-      // TODO: Apparently, box shadow is slow in this transition. Action item: Investigate and file an issue
-      // boxShadow: [
-      //   BoxShadow(
-      //     offset: Offset(0, 0),
-      //     color: Color(0xFFE3E3E3),
-      //     blurRadius: 30,
-      //   ),
-      // ],
       child: ClipRRect(
         clipBehavior: Clip.antiAlias,
         borderRadius: BorderRadius.circular(16),
@@ -407,6 +413,7 @@ class _PageItemViewState extends State<PageItemView> {
             ),
           ],
         ),
+      ),
       ),
     );
   }

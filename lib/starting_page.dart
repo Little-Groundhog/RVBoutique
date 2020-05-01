@@ -35,7 +35,7 @@ class _StartingPageState extends State<StartingPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Colors.blueGrey,
         centerTitle: true,
         title: Text(
           'Rencontrer un ami',

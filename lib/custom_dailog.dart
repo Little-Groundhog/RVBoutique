@@ -16,7 +16,7 @@ class CustomDialog extends StatelessWidget {
       actions: <Widget>[
         new FlatButton(
           onPressed: callback,
-          color: Colors.white,
+          color: Colors.white30,
           child: new Text(actionText),
         )
       ],

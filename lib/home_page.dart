@@ -179,6 +179,7 @@ class _HomePageState extends State<HomePage> {
     return new Scaffold(
         appBar: new AppBar(
           title: new Text("Le Tic Tac Toe de Chachou"),
+          backgroundColor: Colors.blueGrey,
         ),
         body: new Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -217,7 +218,7 @@ class _HomePageState extends State<HomePage> {
                 "Reset",
                 style: new TextStyle(color: Colors.white, fontSize: 20.0),
               ),
-              color: Colors.lightGreen,
+              color: Colors.grey,
               padding: const EdgeInsets.all(20.0),
               onPressed: resetGame,
             )

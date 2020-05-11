@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:ChaMaxAdr/imagesNewStartPage.dart';
 import 'package:ChaMaxAdr/classNewStart.dart';
 import 'package:ChaMaxAdr/about_widget.dart';
+import 'package:ChaMaxAdr/code_boutique.dart';
 import 'package:ChaMaxAdr/strings.dart';
 
 
@@ -323,12 +324,9 @@ class _PageItemViewState extends State<PageItemView> {
   Widget _buildBackground(double height) {
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
-      onTap:() => Navigator.of(context).push(
-        CupertinoPageRoute(
-          builder: (builder) => CameraScreen(
-            selectedModel: "cubeModel",
-          ),
-        ),
+      onTap:() => showDialog(
+        context: context,
+        builder: (context) => CodeBoutique(),
       ),
       child: Container(
       height: height,

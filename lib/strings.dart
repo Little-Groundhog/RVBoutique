@@ -17,6 +17,8 @@ String brainCode = "3333";
 String catCode = "4444";
 String legoCode = "5555";
 
+String demandeCode = "Merci d'entrer le code reçu dans l'application VBA";
+
 String aboutApp = "Alors elle est pas génial notre application ? \n"
     "Pour retrouver le code source de l'application, il suffit de cliquer sur "
     "le petit bouton Git juste en dessous ;) \n\n"

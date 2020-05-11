@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage>
     final product1 = Product(
       title: 'Robot \nSteamPunk',
       subtitle: 'Le magnifique robot',
-      price: '3000 jetons',
+      price: '1000 jetons',
       category: 'Modèle 3D',
       imageUrl: AssetConstants.robot,
     );
@@ -67,15 +67,15 @@ class _MyHomePageState extends State<MyHomePage>
     final product3 = Product(
       title: 'Chasseur automatique\nDrone',
       subtitle: 'OVNI',
-      price: '5000 jetons',
+      price: '3000 jetons',
       category: 'Modèle 3D',
       imageUrl: AssetConstants.drone,
     );
     final product4 = Product(
-      title: 'La maison\nen lego',
-      subtitle: 'Construction',
-      price: '500 jetons',
-      category: 'Modèle 3D',
+      title: 'Un tour du monde\n',
+      subtitle: "Billet d'avion transféré par mail",
+      price: '10000 jetons',
+      category: 'Escapade',
       imageUrl: AssetConstants.lego,
     );
 

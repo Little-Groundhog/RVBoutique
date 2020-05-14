@@ -2,11 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:ChaMaxAdr/camera_screen.dart';
+import 'package:ChaMaxAdr/model_bloc.dart';
 import 'package:ChaMaxAdr/model_event.dart';
 import 'package:ChaMaxAdr/strings.dart' as strings;
 
 class CodeBoutique extends StatelessWidget{
   final TextEditingController code = new TextEditingController();
+  String modelLoad;
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
@@ -44,7 +46,16 @@ class CodeBoutique extends StatelessWidget{
               child: Text("GO !",
                   style: TextStyle(fontSize: 30),
               ),
-              onPressed: (verif),
+              onPressed: (){
+                // ignore: unnecessary_statements
+                verif;
+                Navigator.of(context).push(CupertinoPageRoute(
+                    builder: (builder) => CameraScreen(
+                      selectedModel: strings.cubePrefab,
+                    ),
+                  ),
+                );
+              },
             ),
           ],
         ),
@@ -54,38 +65,16 @@ class CodeBoutique extends StatelessWidget{
 
   void verif(){
     if(code.text == strings.cubeCode){
-
-      CubeModelSelectEvent();
-      // ignore: unnecessary_statements
-          () => Navigator.of(context).push(
-        CupertinoPageRoute(
-          builder: (builder) => CameraScreen(
-            selectedModel: strings.cubePrefab,
-          ),
-        ),
-      );
+      modelLoad = "strings.cubePrefab";
+      print (modelLoad);
     }
     if(code.text == strings.droneCode){
-      DroneModelSelectEvent();
-      // ignore: unnecessary_statements
-          () => Navigator.of(context).push(
-        CupertinoPageRoute(
-          builder: (builder) => CameraScreen(
-            selectedModel: strings.dronePrefab,
-          ),
-        ),
-      );
+
+      modelLoad = "strings.dronePrefab";
     }
     if(code.text == strings.brainCode){
-      DroneModelSelectEvent();
-      // ignore: unnecessary_statements
-          () => Navigator.of(context).push(
-        CupertinoPageRoute(
-          builder: (builder) => CameraScreen(
-            selectedModel: strings.brainPrefab,
-          ),
-        ),
-      );
+
+      modelLoad = "strings.brainPrefab";
     }
   }
 }

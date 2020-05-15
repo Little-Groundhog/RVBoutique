@@ -158,19 +158,19 @@ void checkCode(){
       ),
     );
   }
-  if(texteEntre.text == strings.droneCode){
-    DroneModelSelectEvent();
+  if(texteEntre.text == strings.petiteVoitureCode){
+    petiteVoitureModelSelectEvent();
     // ignore: unnecessary_statements
     () => Navigator.of(context).push(
       CupertinoPageRoute(
         builder: (builder) => CameraScreen(
-          selectedModel: strings.dronePrefab,
+          selectedModel: strings.petiteVoiturePrefab,
         ),
       ),
     );
   }
   if(texteEntre.text == strings.brainCode){
-    DroneModelSelectEvent();
+    petiteVoitureModelSelectEvent();
     // ignore: unnecessary_statements
     () => Navigator.of(context).push(
       CupertinoPageRoute(

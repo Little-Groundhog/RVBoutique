@@ -51,7 +51,7 @@ class CodeBoutique extends StatelessWidget{
                 verif;
                 Navigator.of(context).push(CupertinoPageRoute(
                     builder: (builder) => CameraScreen(
-                      selectedModel: strings.cubePrefab,
+                      selectedModel: strings.petiteVoiturePrefab,
                     ),
                   ),
                 );
@@ -68,9 +68,9 @@ class CodeBoutique extends StatelessWidget{
       modelLoad = "strings.cubePrefab";
       print (modelLoad);
     }
-    if(code.text == strings.droneCode){
+    if(code.text == strings.petiteVoitureCode){
 
-      modelLoad = "strings.dronePrefab";
+      modelLoad = "strings.petiteVoiturePrefab";
     }
     if(code.text == strings.brainCode){
 

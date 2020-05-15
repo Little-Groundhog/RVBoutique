@@ -4,6 +4,6 @@ abstract class ModelEvent {}
 
 class CubeModelSelectEvent extends ModelEvent {}
 
-class DroneModelSelectEvent extends ModelEvent {}
+class petiteVoitureModelSelectEvent extends ModelEvent {}
 
 class BrainModelSelectEvent extends ModelEvent {}

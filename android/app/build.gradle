@@ -87,7 +87,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.15.0'
     implementation 'com.google.ar.sceneform:core:1.15.0'
-    implementation 'com.google.ar:core:1.15.0'
+    implementation 'com.google.ar:core:1.16.0'
     implementation "com.google.ar.sceneform:animation:1.15.0"
 }
 
@@ -108,7 +108,7 @@ sceneform.asset('sampledata/Anubis Statue/scene.gltf',
         'sampledata/Anubis Statue/scene.sfa',
         'src/main/assets/statueModel')
 
-sceneform.asset('sampledata/buster_drone/drone.gltf',
+sceneform.asset('sampledata/petiteVoiture/scene.gltf',
         'default',
-        'sampledata/buster_drone/drone.sfa',
-        'src/main/assets/droneModel')
+        'sampledata/petiteVoiture/scene.sfa',
+        'src/main/assets/voitureModel')

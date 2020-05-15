@@ -3,15 +3,15 @@ String load = "Test !";
 
 //Liste des modèles 3D disponibles
 String statuePrefab = "statueModel";
-String dronePrefab = "droneModel";
 String cubePrefab = "cubeModel";
 String brainPrefab = "brainModel";
 String catPrefab = "catModel";
+String petiteVoiturePrefab = "petiteVoitureModel";
 String legoHousePrefab = "legoHouseModel";
 
 //Liste des codes pour obtenir
 String statueCode = "0000";
-String droneCode = "1111";
+String petiteVoitureCode = "1111";
 String cubeCode = "2222";
 String brainCode = "3333";
 String catCode = "4444";

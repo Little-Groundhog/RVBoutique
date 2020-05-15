@@ -19,8 +19,8 @@ class ModelBloc {
         _prefab = strings.cubePrefab;
       } else if (event is BrainModelSelectEvent){
         _prefab = strings.brainPrefab;
-      } else if (event is DroneModelSelectEvent){
-        _prefab = strings.dronePrefab;
+      } else if (event is petiteVoitureModelSelectEvent){
+        _prefab = strings.petiteVoiturePrefab;
       }
 
       _inModel.add(_prefab);

@@ -111,4 +111,4 @@ sceneform.asset('sampledata/Anubis Statue/scene.gltf',
 sceneform.asset('sampledata/petiteVoiture/scene.gltf',
         'default',
         'sampledata/petiteVoiture/scene.sfa',
-        'src/main/assets/voitureModel')
+        'src/main/assets/petiteVoitureModel')

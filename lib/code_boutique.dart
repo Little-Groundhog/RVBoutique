@@ -8,7 +8,7 @@ import 'package:ChaMaxAdr/strings.dart' as strings;
 
 class CodeBoutique extends StatelessWidget{
   final TextEditingController code = new TextEditingController();
-  String modelLoad;
+  var modelLoad = 'string.petiteVoiturePrefab';
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
@@ -46,14 +46,13 @@ class CodeBoutique extends StatelessWidget{
               child: Text("GO !",
                   style: TextStyle(fontSize: 30),
               ),
-              onPressed: (){
-                // ignore: unnecessary_statements
-                verif;
+              onPressed: (verif),
+              onLongPress: (){
                 Navigator.of(context).push(CupertinoPageRoute(
-                    builder: (builder) => CameraScreen(
-                      selectedModel: strings.petiteVoiturePrefab,
-                    ),
+                  builder: (builder) => CameraScreen(
+                    selectedModel: modelLoad,
                   ),
+                ),
                 );
               },
             ),
@@ -64,17 +63,23 @@ class CodeBoutique extends StatelessWidget{
   }
 
   void verif(){
+    print('ALLO');
     if(code.text == strings.cubeCode){
-      modelLoad = "strings.cubePrefab";
+      modelLoad = 'cubeModel';
+      print('code chargé : ');
       print (modelLoad);
     }
     if(code.text == strings.petiteVoitureCode){
 
-      modelLoad = "strings.petiteVoiturePrefab";
+      modelLoad = 'petiteVoitureModel';
+      print('code chargé : ');
+      print (modelLoad);
     }
     if(code.text == strings.brainCode){
 
-      modelLoad = "strings.brainPrefab";
+      modelLoad = 'brainModel';
+      print('code chargé : ');
+      print (modelLoad);
     }
   }
 }

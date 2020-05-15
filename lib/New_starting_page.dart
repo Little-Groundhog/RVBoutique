@@ -66,8 +66,8 @@ class _MyHomePageState extends State<MyHomePage>
       imageUrl: AssetConstants.cube,
     );
     final product3 = Product(
-      title: 'Chasseur automatique\nDrone',
-      subtitle: 'OVNI',
+      title: 'Petite Voiture\nmignonne',
+      subtitle: 'presque une Super 5',
       price: '3000 jetons',
       category: 'Modèle 3D',
       imageUrl: AssetConstants.petiteVoiture,

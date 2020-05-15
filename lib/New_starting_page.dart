@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage>
       subtitle: 'OVNI',
       price: '3000 jetons',
       category: 'Modèle 3D',
-      imageUrl: AssetConstants.drone,
+      imageUrl: AssetConstants.petiteVoiture,
     );
     final product4 = Product(
       title: 'Un tour du monde\n',

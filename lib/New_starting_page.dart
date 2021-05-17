@@ -28,7 +28,7 @@ class _MyHomePageState extends State<MyHomePage>
   List<Product> _products = [];
   PageController _pageController;
   double _currentPage = 0;
-  String _productCategory = 'Boutique VBA';
+  String _productCategory = 'INSIC CUISINE';
 
   AnimationController _animationController;
   Animation<Offset> _searchOffsetAnimation;
@@ -52,32 +52,32 @@ class _MyHomePageState extends State<MyHomePage>
 
     // Initialize products
     final product1 = Product(
-      title: 'Robot \nSteamPunk',
-      subtitle: 'Le magnifique robot',
-      price: '1000 jetons',
+      title: 'Cuisine \nen Ligne',
+      subtitle: 'Simple et pratique',
+      price: '',
       category: 'Modèle 3D',
-      imageUrl: AssetConstants.robot,
+      imageUrl: AssetConstants.ligne,
     );
     final product2 = Product(
-      title: 'Cube\nLe Rubix de cube',
-      subtitle: 'Le cube magique',
-      price: '200 jetons',
+      title: 'Cuisine \nen Angle',
+      subtitle: 'Une cuisine complète',
+      price: '',
       category: 'Modèle 3D',
-      imageUrl: AssetConstants.cube,
+      imageUrl: AssetConstants.angle,
     );
     final product3 = Product(
-      title: 'Petite Voiture\nmignonne',
-      subtitle: 'presque une Super 5',
-      price: '3000 jetons',
+      title: 'Cuisine \nen U',
+      subtitle: 'Grande cuisine',
+      price: '',
       category: 'Modèle 3D',
-      imageUrl: AssetConstants.petiteVoiture,
+      imageUrl: AssetConstants.U,
     );
     final product4 = Product(
-      title: 'Un tour du monde\n',
-      subtitle: "Billet d'avion transféré par mail",
-      price: '10000 jetons',
+      title: 'Cuisine \npersonalisé',
+      subtitle: "Sur-mesure par notre équipe",
+      price: '',
       category: 'Escapade',
-      imageUrl: AssetConstants.lego,
+      imageUrl: AssetConstants.pro,
     );
 
     _products.addAll([product1, product2, product3, product4]);

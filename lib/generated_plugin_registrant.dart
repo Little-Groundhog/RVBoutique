@@ -1,13 +1,15 @@
 //
 // Generated file. Do not edit.
 //
-import 'dart:ui';
+
+// ignore_for_file: lines_longer_than_80_chars
 
 import 'package:url_launcher_web/url_launcher_web.dart';
 
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
-void registerPlugins(PluginRegistry registry) {
-  UrlLauncherPlugin.registerWith(registry.registrarFor(UrlLauncherPlugin));
-  registry.registerMessageHandler();
+// ignore: public_member_api_docs
+void registerPlugins(Registrar registrar) {
+  UrlLauncherPlugin.registerWith(registrar);
+  registrar.registerMessageHandler();
 }

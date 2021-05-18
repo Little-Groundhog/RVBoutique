@@ -46,7 +46,7 @@ class _CameraScreenState extends State<CameraScreen> {
     controller.addArCoreNodeWithAnchor(
       ArCoreReferenceNode(
         name: widget.selectedModel,
-        obcject3DFileName: widget.selectedModel + ".sfb",
+        object3DFileName: widget.selectedModel + ".sfb",
         position: plane.pose.translation,
         rotation: plane.pose.rotation,
       ),
